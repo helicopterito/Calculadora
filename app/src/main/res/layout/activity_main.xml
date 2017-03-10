@@ -1,150 +1,83 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:id="@+id/activity_main"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent"
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     android:orientation="vertical"
-    tools:context="com.example.android.calculadora.MainActivity">
-
-    <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@android:color/black"
-        android:textColor="@android:color/white"
-        android:layout_weight="1"
-        android:textAlignment="center"
-        android:textSize="60dp"
-        android:text="0.0" />
-
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-
-        <LinearLayout
+        android:id="@+id/linearLayout1"
+        android:layout_marginLeft="10pt"
+        android:layout_marginRight="10pt"
+        android:layout_marginTop="3pt">
+        <EditText
+            android:layout_weight="1"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="5pt"
+            android:id="@+id/etNum1"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="*"
-                android:onClick="multiplicar"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="/"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="+"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="-"
-                android:onClick="poner"/>
-
-        </LinearLayout>
-
-        <LinearLayout
+            android:inputType="numberDecimal">
+        </EditText>
+        <EditText
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="5pt"
+            android:id="@+id/etNum2"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="7"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="8"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="9"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="C"
-                android:onClick="poner"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="4"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="5"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="6"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="%"
-                android:onClick="poner"/>
-
-        </LinearLayout>
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="1"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="2"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="3"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="."
-                android:onClick="poner"/>
-
-        </LinearLayout>
-
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="0"
-                android:onClick="poner"/>
-            <Button
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="="
-                android:onClick="poner"/>
-
-        </LinearLayout>
+            android:inputType="numberDecimal">
+        </EditText>
     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/linearLayout2"
+        android:layout_marginTop="3pt"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt">
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="+"
+            android:textSize="8pt"
+            android:id="@+id/btnAdd">
+        </Button>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="-"
+            android:textSize="8pt"
+            android:id="@+id/btnSub">
+        </Button>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="*"
+            android:textSize="8pt"
+            android:id="@+id/btnMult">
+        </Button>
+        <Button
+            android:layout_height="wrap_content"
+            android:layout_width="match_parent"
+            android:layout_weight="1"
+            android:text="/"
+            android:textSize="8pt"
+            android:id="@+id/btnDiv">
+        </Button>
 
+    </LinearLayout>
+    <TextView
+        android:layout_height="wrap_content"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="5pt"
+        android:layout_marginRight="5pt"
+        android:textSize="12pt"
+        android:layout_marginTop="3pt"
+        android:id="@+id/tvResult"
+        android:gravity="center_horizontal">
+    </TextView>
 
 </LinearLayout>
